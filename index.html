@@ -19,6 +19,20 @@ feeling energized and motivated." />
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/61daa0b400.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "f0164488-b6b5-433c-97b2-b39a93ec0627", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "65c15bcc-11df-4295-8c1b-938fe36372f1", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
 </head>
 
 <body>
